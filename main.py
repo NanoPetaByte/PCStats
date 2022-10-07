@@ -18,6 +18,7 @@ class Statistics:
         self.screen = turtle.Screen()
         self.canvas = self.screen.getcanvas()
         self.root = self.canvas.winfo_toplevel()
+        self.root.attribute("-fullscreen", True)
         self.canvas.config(border=-2)
         self.timer = [time.time(), time.time()]
         self.pen.hideturtle()
